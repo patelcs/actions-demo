@@ -16,6 +16,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: pwd
-      - run: whoami
-      - run: uname -a
+      - name: System details
+        run: pwd
+        run: whoami
+        run: uname -a
+        run: echo "just chilling..."
