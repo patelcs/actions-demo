@@ -18,6 +18,6 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: System details
         run: pwd
-        run: whoami
-        run: uname -a
-        run: echo "just chilling..."
+      - run: whoami
+      - run: uname -a
+      - run: echo "just chilling..."
