@@ -1,6 +1,9 @@
 name: nodejs-setup
 run-name: ${{ github.actor }} is setting up nodejs
-on: [push]
+on:
+  push:
+    branches:
+      - master
 jobs:
   set-up-node:
     runs-on: ubuntu-latest
