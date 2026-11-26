@@ -1,0 +1,13 @@
+name: nodejs-setup
+run-name: ${{ github.actor }} is setting up nodejs
+on: [push]
+jobs:
+  set-up-node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with: 
+          node-version: '22'
+      - run: node -v && npm -v
+      - run: node index.js
