@@ -1,0 +1,11 @@
+name: checkout
+run-name: ${{ github.actor }} is checking out code
+on: [push]
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: pwd
+      - run: ls
+      - run: ls .github/workflows
